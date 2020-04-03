@@ -1,0 +1,45 @@
+<header>
+	<title>Log in</title>
+</header>
+
+<body>
+	<div class="container-bg">
+        <div class="container-login">
+            <form class="big" (ngSubmit)="onSubmit()" #userForm="ngForm">
+                <span class="contact1-form-title">
+                    LOG IN
+                 </span>
+                 <mat-error class="alert" [hidden]="!error">
+                    {{error}}
+                </mat-error>
+                <div class="container-input">
+                <mat-form-field>
+                    <mat-label>Enter your email</mat-label>
+                  <input matInput [(ngModel)]="user.email" [formControl]="email" required>
+                  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+                </div>
+              
+                <div class="container-input">
+                    <mat-form-field>
+                        <mat-label>Enter your password</mat-label>
+                        <input matInput [(ngModel)]="user.password" name="password" [type]="hide ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </div>
+                <div class="container-input">
+                    <div class="container-contact1-form-btn">
+                        <button class="contact1-form-btn">
+                            <span>
+                                LOG IN
+                            </span>
+                        </button>
+                    </div>
+                    <a class= "reg">Don't have an account? </a><a [routerLink]="['/register']" >Register</a>
+                </div>
+              </form>
+        </div>
+	</div>
+</body>

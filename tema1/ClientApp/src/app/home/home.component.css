@@ -1,0 +1,38 @@
+.name{
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-top: 0;  
+  margin-bottom: 0px;  
+}
+
+.name-label{
+  font-weight: 700;
+}
+
+.center-title {
+  text-align: center;
+  margin: auto;
+
+}
+.header{
+  padding: 3rem 5% 2rem;
+  display: flex;
+  align-items: center;
+  color: #fff;  
+}
+
+
+.title-container{
+  width: 1200px; 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:justify; 
+  word-break:break-all;
+}
+
+.center {
+  margin: auto;
+  width: 65%;
+  padding: 20px;
+}

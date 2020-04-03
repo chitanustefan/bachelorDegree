@@ -1,0 +1,23 @@
+<app-sidenav></app-sidenav>
+<header class="background header">
+  <title>
+    {{'News' | translate }}
+  </title>
+    <div class="title-container">
+       <h3 class="name center-title"><span class="header-title">{{'News' | translate }} </span></h3>
+  </div>
+</header>
+
+<div class="container-bg">
+  <div class="container-text">
+    <div class="center">       
+      <ul>
+         <li *ngFor="let item of xmlItems">
+          <p>{{item.new | translate}}</p>
+         </li>
+       </ul> 
+    </div>
+  </div>
+</div>
+
+

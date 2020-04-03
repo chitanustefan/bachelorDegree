@@ -1,0 +1,29 @@
+.title-container{
+    width: 900px; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify; 
+    word-break:break-all;
+}
+
+.name{
+    font-size: 1.57rem;
+    font-weight: 100;
+  }
+  
+  .name-label{
+    font-weight: 500;
+  }
+  
+  .center-title {
+    text-align: center;
+    margin: auto;
+  
+  }
+
+  .header{
+    padding: 3rem 5% 2rem;
+    display: flex;
+    align-items: center;
+}

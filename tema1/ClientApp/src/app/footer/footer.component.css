@@ -1,0 +1,22 @@
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: #1565c0;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.right{
+    float: right;
+    width: 70px;
+    padding: 1px;
+    margin-right: 20px;     
+}
+
+h3{
+    margin-top: 15px;
+    float: bottom;
+}

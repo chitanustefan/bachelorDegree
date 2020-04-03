@@ -1,0 +1,25 @@
+<div>
+    <div class="parent">
+      <div class="narrow">
+            <img src="assets/avatars/{{user.avatar}}"  class="avatar">
+            <!-- <img class="img-avatar" [src]="item.avatar"> -->
+            <button mat-stroked-button class="change-img-button" color="primary" (click)="openDialog()">Change Avatar</button>
+       </div>
+    
+      <div class="wide">
+            <form class="edit-form" (ngSubmit)="onSubmit()" #editForm="ngForm">
+
+                <mat-form-field>
+                    <mat-label>Domenii de interes</mat-label>
+                    <mat-select [formControl]="domenii" multiple>
+                      <mat-option *ngFor="let domeniu of list" [value]="domeniu">{{domeniu}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+
+                <div class="buttonBottom">
+                    <button mat-raised-button class="submit-button" color="primary" type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 

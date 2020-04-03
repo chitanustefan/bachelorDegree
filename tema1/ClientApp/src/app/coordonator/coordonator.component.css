@@ -1,0 +1,54 @@
+.avatar{
+  border-radius: 50%;
+  border: 3px solid rgb(95, 115, 228);
+  box-sizing: border-box;
+  width: 10rem;
+  height: 10rem;
+}
+
+.name{
+  font-size: 3.5rem;
+  font-weight: 300;
+  font-family: Montserrat-Regular;
+}
+
+.name-label{
+  font-weight: 700;
+  font-family: Montserrat-Bold;
+}
+
+.level{
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-family: Montserrat-Regular;
+  display: block;
+}
+
+.title{
+  padding-top: 50px;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: Montserrat-Medium;
+  color: black;  
+}
+
+.logo{
+margin-bottom: 1rem;
+}
+
+
+.interes{
+  display: block;
+  word-break: break-all;
+  font-family: Montserrat-Regular;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+

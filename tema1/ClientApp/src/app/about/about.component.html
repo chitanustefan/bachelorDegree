@@ -1,0 +1,52 @@
+
+
+
+<app-sidenav></app-sidenav>
+<header class="background header">
+    <title>{{'About' | translate }}</title>
+    <div class="title-container">
+       <h3 class="name center-title"><span class="header-title">{{'AboutT.Title' | translate}} </span></h3>
+  </div>
+</header>
+
+<div class="container-bg">
+    <div class="container-text">
+        <div>
+            <p>{{ 'AboutT.FirstP' | translate }}</p>
+            <ul>
+                <li>{{'AboutT.RecProd' | translate }}</li>
+                <li>{{'AboutT.GenRetete' | translate }}</li>
+            </ul>
+            <p>{{'AboutT.RaspPart' | translate }}</p>
+            <p>{{'AboutT.MobPart' | translate }}</p>
+            <p>{{'AboutT.FinPart' | translate }}</p>
+        </div>
+
+        <!-- Comentarii -->
+    <div class="comments-container comm">
+        <hr class="divider">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+                <textarea class="postCom" id="postCom" name="desc" ngModel required #desc="ngModel" placeholder="Leave your comment here" ></textarea>
+                <button type="submit" class="subBtn" mat-flat-button color="primary" >Submit</button>
+        </form>
+
+        <ul class="comments-list comm">
+            <li>
+                <div class="comment-main-level comm" *ngFor="let comm1 of com">
+                    <div class="comment-avatar comm"><img src="assets/avatars/{{comm1.imgroot}}" alt="avatar"></div> 
+                    <div class="comment-box comm">
+                        <div class="comment-head comm">
+                            <h6 class="comment-name comm">{{comm1.nume}}</h6>
+                        </div>
+                        <div class="comment-content comm">
+                            {{comm1.desc}} 
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    </div>
+</div>

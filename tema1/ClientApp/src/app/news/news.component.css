@@ -1,0 +1,44 @@
+p{
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 0;  
+    margin-bottom: 30px;  
+    color: black;
+    font-family: Montserrat-Medium;
+}
+
+  .header{
+    padding: 3rem 5% 2rem;
+    display: flex;
+    align-items: center;
+    color: #fff;  
+  }
+
+  .title-container{
+    width: 1200px; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify; 
+    word-break:break-all;
+}
+.name{
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-top: 0;  
+    margin-bottom: 0;  
+  }
+
+.name-label{
+    font-weight: 700;
+  }
+
+.center-title {
+    text-align: center;
+    margin: auto;
+
+  }
+  .center{
+    margin-top: 0px;
+    width: 100%;
+  }

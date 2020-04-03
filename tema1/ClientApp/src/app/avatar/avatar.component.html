@@ -1,0 +1,4 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <input type="file" #fileupload [(ngModel)]="filedata" name="filedata" (change)="fileEvent($event)"/>
+    <button  mat-flat-button color="primary">Submit</button>
+</form>

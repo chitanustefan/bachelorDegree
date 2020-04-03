@@ -1,0 +1,33 @@
+{
+    "Home": "Home",
+    "News": "News",
+    "About": "About",
+    "Student Profile": "Student Profile",
+    "Coordonator": "Coordinator",
+    "AboutT": {
+        "Title": "Detecting products from the fridge and generating possible recipes based on ingredients identified",
+        "FirstP": "The application has two components:",
+        "RecProd": "Product recognition",
+        "GenRetete": "Recipes generation",
+        "RaspPart": "The product recognition application is developed on a Raspberry Pi board, in Python language. Opensource libraries are used for image recognition.",
+        "MobPart": "Once the products in the image are identified, they are sent via Bluetooth to a mobile device.",
+        "FinPart":"The products are received in the form of a list, and are compared with the products in the recipes existing in the database."
+    },
+    "Profile": {
+        "Tech": "Technologies of interest"
+    },
+    "CoordonatorP":{
+        "Post":"Doctor in Electrical Engineering",
+        "Cercetare": "Research directions",
+        "FirstC": " Memory systems",
+        "SecondC": "Self-healing techniques and methods ",
+        "ThirdC": "Error detection and correction codes",
+        "QC": "Secure memory systems"
+
+    },
+    "Lic": "License work",
+    "News1":{
+        "1": "All the necersary components have been purchased(rasperry pi board, web camera)",
+        "2": "Work is being done on Tenserflow integration for product recognition"
+    }
+}

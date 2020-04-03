@@ -1,0 +1,48 @@
+<header>
+	<title>Register</title>
+</header>
+
+<body>
+	<div class="container-bg">
+        <div class="container-login">
+            <form class="big" (ngSubmit)="onSubmit()" #registerForm="ngForm">
+                <span class="contact1-form-title">
+                    Register
+                 </span>
+                 <!-- <mat-error class="alert" [hidden]="!error.email">
+                  {{error.email}}
+                 </mat-error>-->
+                 <mat-error class="alert" [hidden]="!error">
+                  {{error}}
+                 </mat-error> 
+                 <table class="container-input" cellspacing="50"><tr>
+                    <td><mat-form-field class="container-input">
+                      <input matInput [(ngModel)]="form.name"  name="name" placeholder="Name" >
+                    </mat-form-field></td>
+                    <td><mat-form-field class="container-input">
+                      <input matInput [(ngModel)]="form.email" name="email" placeholder="Email"  >
+                    </mat-form-field></td>
+                  </tr></table>
+                
+                  <table class="container-input" cellspacing="50"><tr>
+                    <td><mat-form-field class="container-input">
+                      <input matInput id="password" [(ngModel)]="form.password" name="password" placeholder="Password" [type]="hide ? 'text' : 'password'">
+                    </mat-form-field></td>
+                    <td><mat-form-field class="container-input">
+                      <input matInput [(ngModel)]="form.password_confirmation" name="confpassword" placeholder="Confirm password" [type]="hide ? 'text' : 'password'">
+                      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </mat-form-field></td>
+                  </tr></table>
+                <div class="container-input">
+                    <div class="container-contact1-form-btn">
+                        <button type="submit" class="contact1-form-btn">
+                            <span>
+                             REGISTER
+                            </span>
+                        </button>
+                    </div>
+                </div>
+              </form>
+        </div>
+	</div>
+</body>

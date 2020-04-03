@@ -1,0 +1,35 @@
+{
+    "Home": "Acasa",
+    "News": "Noutati",
+    "About": "Despre",
+    "Student Profile": "Profil Student",
+    "Coordonator": "Coordonator",
+    "AboutT": {
+        "Title": "Detectarea produselor dintr-un frigider și generarea unor posibile rețete pe baza ingredientelor identificate",
+        "FirstP": "Aplicatia are doua componente:",
+        "RecProd": "Recunoasterea produselor",
+        "GenRetete": "Generarea rețetelor",
+        "RaspPart": "Aplicatia de recunoastere a produselor este dezvoltata pe o placa Raspberry Pi, in limbajul Python. Sunt folosite librarii opensource pentru recunoasterea imaginilor.",
+        "MobPart": "Dupa ce produsele din imagine sunt identificate acestea sunt trimise prin bluetooth catre un dispozitiv mobile.",
+        "FinPart":"Produsele sunt primite sub forma de lista, si sunt comparate cu produsele din rețetele existente in baza de date."
+    },
+    "Profile": {
+        "Tech": "Tehnologii de interes"
+
+    },
+    "CoordonatorP":{
+        "Post":"Doctor in Inginerie Electrica",
+        "Cercetare": "Directii de cercetare",
+        "FirstC": "Sisteme de memorie",
+        "SecondC": "Tehnici și metode de auto-vindecare ",
+        "ThirdC": "Coduri de detectare și corectare a erorilor",
+        "QC": "Sisteme de memorie securizate"
+
+    },
+    "Lic": "Lucrare Licenta",
+    "News1":{
+        "1": "Toate componentele necersare au fost achizitionate(placa rasperry, camera web)",
+        "2": "Se lucreaza la integrarea Tenserflow pentru recunoasterea produselor"
+    }
+
+}

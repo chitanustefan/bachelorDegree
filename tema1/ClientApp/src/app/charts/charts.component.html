@@ -1,0 +1,27 @@
+
+<app-sidenav></app-sidenav>
+<header class="background header">
+    <title>Statistica</title>
+    <div class="title-container">
+       <h3 class="name center-title"><span class="header-title">Statistica </span></h3>
+  </div>
+</header>
+
+<div class="container-bg">
+    <div class="container-text">
+        <div style="align-items: center; width: 500px; height: 500px;">
+            <div style="display: block;">
+            <canvas baseChart width="100px" height="100px"
+                        [datasets]="lineChartData"
+                        [labels]="lineChartLabels"
+                        [options]="lineChartOptions"
+                        [colors]="lineChartColors"
+                        [legend]="lineChartLegend"
+                        [chartType]="lineChartType"
+                        [plugins]="lineChartPlugins"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+            </div>
+        </div>
+    </div>
+</div>

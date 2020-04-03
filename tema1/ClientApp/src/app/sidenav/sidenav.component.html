@@ -1,0 +1,20 @@
+
+    <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+    
+    <mat-sidenav #sidenav (sidenavClose)="sidenav.close()" role="navigation">
+        <mat-nav-list >
+            <mat-list-item role="listitem" routerLink="/home" (click)="sidenav.close()" ><mat-icon>home</mat-icon> {{'Home' | translate }} </mat-list-item>
+            <mat-list-item role="listitem" routerLink="/news" (click)="sidenav.close()"><mat-icon>new_releases</mat-icon> {{'News' | translate }} </mat-list-item>
+            <mat-list-item role="listitem" routerLink="/about" (click)="sidenav.close()"><mat-icon>assignment</mat-icon> {{'About' | translate }} </mat-list-item>
+            <mat-list-item role="listitem" routerLink="/profil" (click)="sidenav.close()"><mat-icon>account_circle</mat-icon> {{ 'Student Profile' | translate }} </mat-list-item>
+            <mat-list-item role="listitem" routerLink="/coordonator" (click)="sidenav.close()"><mat-icon>assignment_ind</mat-icon> {{ 'Coordonator' | translate }} </mat-list-item>
+            <mat-list-item role="listitem" routerLink="/charts" (click)="sidenav.close()">	<mat-icon>contact_mail</mat-icon> Statistica </mat-list-item>
+            <mat-list-item role="listitem" routerLink="/contact" (click)="sidenav.close()">	<mat-icon>contact_mail</mat-icon> Contact </mat-list-item>
+            <div class="bottom center"> 
+
+              <a mat-raised-button href="#" (click)="logout($event)">Logout</a>
+              <!-- <button mat-button *ngIf="loggedIn">Logout</button> -->
+            </div>
+            
+          </mat-nav-list>             
+    </mat-sidenav>
